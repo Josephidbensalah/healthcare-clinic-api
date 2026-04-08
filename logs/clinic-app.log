@@ -61,3 +61,74 @@
 2026-04-08T23:58:31.517+01:00  WARN 15616 --- [clinic] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
 2026-04-08T23:58:31.517+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-08T23:58:31.521+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-08T23:58:36.716+01:00  INFO 30108 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : Starting ClinicApplication using Java 17.0.9 with PID 30108 (C:\Users\pc\Documents\joseph-workspace\Java\clinic\target\classes started by pc in C:\Users\pc\Documents\joseph-workspace\Java\clinic)
+2026-04-08T23:58:36.724+01:00  INFO 30108 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : The following 1 profile is active: "dev"
+2026-04-08T23:58:36.821+01:00  INFO 30108 --- [clinic] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-08T23:58:36.821+01:00  INFO 30108 --- [clinic] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-08T23:58:37.858+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-08T23:58:37.860+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-08T23:58:38.007+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 4 JPA repository interfaces.
+2026-04-08T23:58:38.025+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-08T23:58:38.026+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-08T23:58:38.044+01:00  INFO 30108 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.AppointmentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:58:38.045+01:00  INFO 30108 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.DoctorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:58:38.045+01:00  INFO 30108 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.PatientRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:58:38.047+01:00  INFO 30108 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:58:38.047+01:00  INFO 30108 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-04-08T23:58:38.769+01:00  INFO 30108 --- [clinic] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-08T23:58:38.783+01:00  INFO 30108 --- [clinic] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-08T23:58:38.783+01:00  INFO 30108 --- [clinic] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-08T23:58:38.844+01:00  INFO 30108 --- [clinic] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2022 ms
+2026-04-08T23:58:39.043+01:00  INFO 30108 --- [clinic] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-08T23:58:39.116+01:00  INFO 30108 --- [clinic] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-08T23:58:39.670+01:00  INFO 30108 --- [clinic] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-08T23:58:39.704+01:00  INFO 30108 --- [clinic] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-08T23:58:39.895+01:00  INFO 30108 --- [clinic] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-08T23:58:39.898+01:00  INFO 30108 --- [clinic] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-08T23:58:39.922+01:00  WARN 30108 --- [clinic] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-08T23:58:39.949+01:00  INFO 30108 --- [clinic] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-08T23:58:41.541+01:00  INFO 30108 --- [clinic] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-08T23:58:41.643+01:00  INFO 30108 --- [clinic] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08T23:58:41.727+01:00  INFO 30108 --- [clinic] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-08T23:58:42.523+01:00  INFO 30108 --- [clinic] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-08T23:58:42.666+01:00  WARN 30108 --- [clinic] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-08T23:58:43.362+01:00  INFO 30108 --- [clinic] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-04-08T23:58:43.427+01:00  INFO 30108 --- [clinic] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-08T23:58:43.438+01:00  INFO 30108 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : Started ClinicApplication in 7.43 seconds (process running for 8.389)
+2026-04-08T23:58:47.233+01:00  INFO 30108 --- [clinic] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-08T23:58:47.233+01:00  INFO 30108 --- [clinic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-08T23:58:47.235+01:00  INFO 30108 --- [clinic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-08T23:58:48.243+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:58:48.433+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:58:48.433+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
+2026-04-08T23:58:48.584+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [$2a$10$GKwIIseaQ/AeAKpHdXJ0OOg3zD1n2ECoy8UJ60kmAUKxFtUnao2Y6]
+2026-04-08T23:58:48.585+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [admin]
+2026-04-08T23:58:52.259+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:58:52.349+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:59:07.325+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:59:07.378+01:00  INFO 30108 --- [clinic] [http-nio-8080-exec-3] c.h.c.services.Impl.PatientServiceImpl   : Creating a new patient with National ID: N12345678
+2026-04-08T23:59:07.382+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [N12345678]
+2026-04-08T23:59:07.399+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Casablanca]
+2026-04-08T23:59:07.400+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Casablanca Settat]
+2026-04-08T23:59:07.400+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [123 Main St]
+2026-04-08T23:59:07.400+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (4:DATE) <- [1990-01-01]
+2026-04-08T23:59:07.401+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (5:VARCHAR) <- [john.doe@example.com]
+2026-04-08T23:59:07.402+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (6:VARCHAR) <- [جون دو]
+2026-04-08T23:59:07.402+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (7:VARCHAR) <- [John Doe]
+2026-04-08T23:59:07.402+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (8:VARCHAR) <- [+123456789]
+2026-04-08T23:59:07.402+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (9:VARCHAR) <- [N12345678]
+2026-04-08T23:59:07.402+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (10:BIGINT) <- [1]
+2026-04-08T23:59:07.403+01:00  INFO 30108 --- [clinic] [http-nio-8080-exec-3] c.h.c.services.Impl.PatientServiceImpl   : Successfully created a patient with ID: 1
+2026-04-08T23:59:15.219+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:59:21.169+01:00 TRACE 30108 --- [clinic] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]

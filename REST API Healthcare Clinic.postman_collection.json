@@ -28,6 +28,23 @@
           "response": []
         },
         {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{clinic_api}}auth/logout",
+              "host": [
+                "{{clinic_api}}auth"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "Sign Up",
           "request": {
             "method": "POST",
@@ -463,7 +480,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NTY3ODIxMCwiZXhwIjoxNzc1NjgxODEwfQ.J16mw8dROxD61yLKzoQD8FItWCmEmLOR91gvHXC8l6U",
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NTY4OTEzMiwiZXhwIjoxNzc1NjkyNzMyfQ.mJwlN66LzKRJHIs2LofmS9y714PMz2txhlysDbPx4Ko",
         "type": "string"
       }
     ]
