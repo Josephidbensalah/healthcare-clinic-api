@@ -10,7 +10,6 @@ import java.util.List;
 @Schema(name = "Doctor", description = "Schema to hold the Doctor information")
 public class DoctorDto {
 
-    @NotNull(message = "ID cannot be null for update")
     private Long id;
 
     @Schema(description = "Full Name of the Doctor", example = "Mohammed Ahmed")

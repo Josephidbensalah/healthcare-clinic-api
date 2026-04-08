@@ -1,0 +1,63 @@
+2026-04-08T23:52:36.970+01:00  INFO 15616 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : Starting ClinicApplication using Java 17.0.9 with PID 15616 (C:\Users\pc\Documents\joseph-workspace\Java\clinic\target\classes started by pc in C:\Users\pc\Documents\joseph-workspace\Java\clinic)
+2026-04-08T23:52:36.977+01:00  INFO 15616 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : The following 1 profile is active: "dev"
+2026-04-08T23:52:37.087+01:00  INFO 15616 --- [clinic] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-08T23:52:37.087+01:00  INFO 15616 --- [clinic] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-08T23:52:38.453+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-08T23:52:38.454+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-08T23:52:38.623+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 4 JPA repository interfaces.
+2026-04-08T23:52:38.650+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-08T23:52:38.651+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-08T23:52:38.677+01:00  INFO 15616 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.AppointmentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:52:38.678+01:00  INFO 15616 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.DoctorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:52:38.678+01:00  INFO 15616 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.PatientRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:52:38.680+01:00  INFO 15616 --- [clinic] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.healthcare.clinic.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-08T23:52:38.682+01:00  INFO 15616 --- [clinic] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-04-08T23:52:39.404+01:00  INFO 15616 --- [clinic] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-08T23:52:39.419+01:00  INFO 15616 --- [clinic] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-08T23:52:39.423+01:00  INFO 15616 --- [clinic] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-08T23:52:39.487+01:00  INFO 15616 --- [clinic] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2399 ms
+2026-04-08T23:52:39.665+01:00  INFO 15616 --- [clinic] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-08T23:52:39.791+01:00  INFO 15616 --- [clinic] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-08T23:52:40.412+01:00  INFO 15616 --- [clinic] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-08T23:52:40.472+01:00  INFO 15616 --- [clinic] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-08T23:52:40.722+01:00  INFO 15616 --- [clinic] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-08T23:52:40.725+01:00  INFO 15616 --- [clinic] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-08T23:52:40.758+01:00  WARN 15616 --- [clinic] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-08T23:52:40.791+01:00  INFO 15616 --- [clinic] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-08T23:52:42.234+01:00  INFO 15616 --- [clinic] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-08T23:52:42.307+01:00  INFO 15616 --- [clinic] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08T23:52:42.385+01:00  INFO 15616 --- [clinic] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-08T23:52:43.245+01:00  INFO 15616 --- [clinic] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-08T23:52:43.386+01:00  WARN 15616 --- [clinic] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-08T23:52:44.075+01:00  INFO 15616 --- [clinic] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-04-08T23:52:44.143+01:00  INFO 15616 --- [clinic] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-08T23:52:44.153+01:00  INFO 15616 --- [clinic] [restartedMain] c.healthcare.clinic.ClinicApplication    : Started ClinicApplication in 8.064 seconds (process running for 8.797)
+2026-04-08T23:55:05.580+01:00  INFO 15616 --- [clinic] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-08T23:55:05.580+01:00  INFO 15616 --- [clinic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-08T23:55:05.582+01:00  INFO 15616 --- [clinic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-08T23:55:06.539+01:00 ERROR 15616 --- [clinic] [http-nio-8080-exec-2] com.healthcare.clinic.security.JwtUtil   : JWT token is expired: JWT expired at 2026-04-08T20:56:50Z. Current time: 2026-04-08T22:55:06Z, a difference of 7096538 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-04-08T23:55:07.163+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:55:07.163+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
+2026-04-08T23:55:07.308+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [$2a$10$V0luHff94ahQAnLWWotn4uWntsOKk1d25KditZWpfkpiz0K2dBm9q]
+2026-04-08T23:55:07.309+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [admin]
+2026-04-08T23:55:14.567+01:00 ERROR 15616 --- [clinic] [http-nio-8080-exec-3] com.healthcare.clinic.security.JwtUtil   : JWT token is expired: JWT expired at 2026-04-08T20:56:50Z. Current time: 2026-04-08T22:55:14Z, a difference of 7104567 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-04-08T23:55:14.659+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:55:59.298+01:00 TRACE 15616 --- [clinic] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-04-08T23:55:59.408+01:00  WARN 15616 --- [clinic] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.healthcare.clinic.dto.PatientDto> com.healthcare.clinic.controllers.PatientController.createPatient(com.healthcare.clinic.dto.PatientDto): [Field error in object 'patientDto' on field 'id': rejected value [null]; codes [NotNull.patientDto.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientDto.id,id]; arguments []; default message [id]]; default message [ID cannot be null for update]] ]
+2026-04-08T23:58:31.254+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-08T23:58:31.490+01:00  INFO 15616 --- [clinic] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-08T23:58:31.511+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08T23:58:31.517+01:00  WARN 15616 --- [clinic] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-08T23:58:31.517+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-08T23:58:31.521+01:00  INFO 15616 --- [clinic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

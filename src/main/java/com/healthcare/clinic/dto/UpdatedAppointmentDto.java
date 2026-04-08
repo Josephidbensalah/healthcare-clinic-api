@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Schema(name = "Appointment", description = "Schema to hold the Appointment information for a patient")
 public class UpdatedAppointmentDto {
 
+    @NotNull(message = "ID cannot be null for update")
     private Long id;
 
     @Schema(description = "Patient Details", implementation = PatientDto.class)

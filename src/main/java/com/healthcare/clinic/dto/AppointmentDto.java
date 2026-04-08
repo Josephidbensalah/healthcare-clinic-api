@@ -15,7 +15,6 @@ public class AppointmentDto implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @NotNull(message = "ID cannot be null for update")
     private Long id;
 
     @Schema(description = "Patient Details", implementation = PatientDto.class)

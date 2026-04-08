@@ -66,4 +66,20 @@ public class JwtUtil {
         }
         return false;
     }
+
+    public long getRemainingTime(String token) {
+        try {
+            Date expiration = Jwts.parserBuilder()
+                    .setSigningKey(key) // This is your SecretKey field
+                    .build()
+                    .parseClaimsJws(token)
+                    .getBody()
+                    .getExpiration();
+
+            return expiration.getTime() - System.currentTimeMillis();
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
 }

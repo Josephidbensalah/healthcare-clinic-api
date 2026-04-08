@@ -14,7 +14,6 @@ public class PatientDto implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @NotNull(message = "ID cannot be null for update")
     private Long id;
 
     @Schema(description = "Full Name of the Patient", example = "Mohammed Ahmed")
